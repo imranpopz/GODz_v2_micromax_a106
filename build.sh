@@ -1,4 +1,4 @@
-export ARCH=arm CROSS_COMPILE=../android_toolchain/linaro-4.9/bin/arm-linux-androideabi-
+export ARCH=arm CROSS_COMPILE=/home/popz/Desktop/toolchain/arm-eabi-4.9/bin/arm-linux-androideabi-
 export KBUILD_BUILD_USER=assusdan
 export KBUILD_BUILD_HOST=SRT
 
@@ -8,7 +8,7 @@ rm -rf arch/arm/boot/zImage
 
 
 echo 'Configure CM Zera S '
-make alps_defconfig >/dev/null
+make h30u10_defconfig >/dev/null
 
 echo 'Building CM Zera S'
 make -j4 zImage >/dev/null 2>buildlog.log

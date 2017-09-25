@@ -28,13 +28,13 @@ echo -e "${orange}####################################################"
 
 
 # EXPORT TOOLCHAIN + SAY USER AND HOST BUILDER
-export ARCH=arm CROSS_COMPILE=../arm-eabi-4.8/bin/arm-eabi-
+export ARCH=arm CROSS_COMPILE=/home/popz/Desktop/toolchain/arm-eabi-4.9/bin/arm-linux-androideabi-
 export KBUILD_BUILD_USER=pablito
 export KBUILD_BUILD_HOST=developer
 
 # READ THE DEFAULT DEFCONFIG
 echo -e "${cyan} CONFIGURE KRILLIN.."
-make lineage_krillin_defconfig
+make h30u10_defconfig
 
 
 # BUILD ZIMAGE
